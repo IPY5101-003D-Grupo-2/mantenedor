@@ -1,12 +1,14 @@
 package modelo;
 
 public class Tecnico {
+
     private String run;
     private String email;
     private String HorarioTrabajo;
     private String nombre;
     private String apellido;
     private String fono;
+    private String password;
 
     public Tecnico() {
         this.run = "no info";
@@ -15,6 +17,15 @@ public class Tecnico {
         this.nombre = "no info";
         this.apellido = "no info";
         this.fono = "no info";
+        this.password = "no info";
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getRun() {
@@ -67,7 +78,7 @@ public class Tecnico {
 
     @Override
     public String toString() {
-        return "Tecnico{" + "run=" + run + ", email=" + email + ", HorarioTrabajo=" + HorarioTrabajo + ", nombre=" + nombre + ", apellido=" + apellido + ", fono=" + fono + '}';
+        return "Tecnico{" + "run=" + run + ", email=" + email + ", HorarioTrabajo=" + HorarioTrabajo + ", nombre=" + nombre + ", apellido=" + apellido + ", fono=" + fono + ", password=" + password + '}';
     }
-    
+
 }
